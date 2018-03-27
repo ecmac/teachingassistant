@@ -37,7 +37,7 @@ Feature: auto-avaliação dos alunos
         And eu vejo que o aluno “Bernardo” avaliou-se com os conceitos “MPA”, “MPA”, “MPA”, “MPA” e “MPA” e eu avaliei-o com os conceitos “MA”, “MA”, “MA”, “MA” e “MA”
         And eu vejo que a aluna “Cláudia” avaliou-se com os conceitos “MA”, “MA”, “MA”, “MA” e “MA”, e eu avaliei-a com os conceitos “MA”, “MA”, “MA”, “MA” e “MA”
 
-    Scenario: professor autoavaliação discrepância web
+    Scenario: professor auto-avaliação discrepância web
         Given eu estou logado como “professor”
         When eu abro a “lista de notas”
         Then eu vejo que o aluno “Danilo” avaliou-se com os conceitos “MPA” para a meta "a", “MPA” para a meta "b", “MPA” para a meta "c", “MPA” para a meta "d" e “MPA” para a meta "e" e eu avaliei-o com os conceitos “MPA” para a meta "a", “MPA” para a meta "b", “MPA” para a meta "c", “MANA” para a meta "d" e “MANA” para a meta "e", então está discrepante.
